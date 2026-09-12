@@ -1,0 +1,642 @@
+    [
+  {
+    "object": "person",
+    "category": "People",
+    "description": "A human being detected in the scene.",
+    "uses": "Represents a person interacting with or occupying the environment.",
+    "related_objects": ["backpack", "handbag", "cell phone", "chair"],
+    "organization": "Keep pathways and frequently used areas clear around people."
+  },
+  {
+    "object": "bicycle",
+    "category": "Transportation",
+    "description": "A two-wheeled human-powered vehicle.",
+    "uses": "Used for transportation, exercise and recreation.",
+    "related_objects": ["person", "helmet", "backpack"],
+    "organization": "Store in a designated bicycle area away from walking paths."
+  },
+  {
+    "object": "car",
+    "category": "Transportation",
+    "description": "A motor vehicle designed mainly for carrying people.",
+    "uses": "Personal transportation and travel.",
+    "related_objects": ["person", "traffic light", "parking meter"],
+    "organization": "Park only in designated spaces and keep access routes clear."
+  },
+  {
+    "object": "motorcycle",
+    "category": "Transportation",
+    "description": "A two-wheeled motor vehicle.",
+    "uses": "Transportation and recreation.",
+    "related_objects": ["person", "helmet"],
+    "organization": "Keep in a designated parking or storage area."
+  },
+  {
+    "object": "airplane",
+    "category": "Transportation",
+    "description": "An aircraft designed for powered flight.",
+    "uses": "Long-distance transportation.",
+    "related_objects": ["person", "suitcase"],
+    "organization": "Not normally relevant to indoor organization."
+  },
+  {
+    "object": "bus",
+    "category": "Transportation",
+    "description": "A large road vehicle designed to carry multiple passengers.",
+    "uses": "Public and group transportation.",
+    "related_objects": ["person", "car"],
+    "organization": "Keep passenger access areas clear."
+  },
+  {
+    "object": "train",
+    "category": "Transportation",
+    "description": "A rail vehicle used for passenger or cargo transportation.",
+    "uses": "Public transportation and freight movement.",
+    "related_objects": ["person", "suitcase"],
+    "organization": "Keep aisles and boarding areas clear."
+  },
+  {
+    "object": "truck",
+    "category": "Transportation",
+    "description": "A large motor vehicle used to transport goods.",
+    "uses": "Cargo transportation and logistics.",
+    "related_objects": ["car", "person"],
+    "organization": "Keep loading and unloading areas unobstructed."
+  },
+  {
+    "object": "boat",
+    "category": "Transportation",
+    "description": "A watercraft designed for travel or recreation on water.",
+    "uses": "Transportation, fishing and recreation.",
+    "related_objects": ["person", "life jacket"],
+    "organization": "Store safely at a designated dock or storage location."
+  },
+  {
+    "object": "traffic light",
+    "category": "Infrastructure",
+    "description": "A signaling device that controls road traffic.",
+    "uses": "Controls movement of vehicles and pedestrians.",
+    "related_objects": ["car", "bus", "person"],
+    "organization": "Maintain unobstructed visibility around traffic signals."
+  },
+  {
+    "object": "fire hydrant",
+    "category": "Safety Equipment",
+    "description": "A connection point providing firefighters access to a water supply.",
+    "uses": "Firefighting and emergency response.",
+    "related_objects": ["person", "car"],
+    "organization": "Never block or obstruct access to a fire hydrant."
+  },
+  {
+    "object": "stop sign",
+    "category": "Road Safety",
+    "description": "A road sign instructing drivers to stop.",
+    "uses": "Traffic control and road safety.",
+    "related_objects": ["car", "person", "traffic light"],
+    "organization": "Keep signs visible and unobstructed."
+  },
+  {
+    "object": "parking meter",
+    "category": "Infrastructure",
+    "description": "A device used to manage paid parking.",
+    "uses": "Parking management.",
+    "related_objects": ["car", "person"],
+    "organization": "Keep access around the meter clear."
+  },
+  {
+    "object": "bench",
+    "category": "Furniture",
+    "description": "A long seat designed for one or more people.",
+    "uses": "Resting and seating.",
+    "related_objects": ["person", "backpack"],
+    "organization": "Keep surrounding walking space clear."
+  },
+  {
+    "object": "bird",
+    "category": "Animals",
+    "description": "A feathered animal that may appear indoors or outdoors.",
+    "uses": "Part of natural environments and ecosystems.",
+    "related_objects": ["person", "tree"],
+    "organization": "Avoid disturbing wildlife and maintain a safe distance."
+  },
+  {
+    "object": "cat",
+    "category": "Animals",
+    "description": "A domesticated small feline animal.",
+    "uses": "Companion animal and household pet.",
+    "related_objects": ["person", "chair", "couch"],
+    "organization": "Keep pet areas clean and keep fragile objects out of reach."
+  },
+  {
+    "object": "dog",
+    "category": "Animals",
+    "description": "A domesticated canine commonly kept as a companion animal.",
+    "uses": "Companionship, assistance and security.",
+    "related_objects": ["person", "backpack", "ball"],
+    "organization": "Keep pet supplies in a dedicated accessible area."
+  },
+  {
+    "object": "horse",
+    "category": "Animals",
+    "description": "A large domesticated mammal commonly used for riding and work.",
+    "uses": "Transportation, sport and recreation.",
+    "related_objects": ["person"],
+    "organization": "Keep in appropriate outdoor or stable environments."
+  },
+  {
+    "object": "sheep",
+    "category": "Animals",
+    "description": "A domesticated farm animal commonly raised for wool and food.",
+    "uses": "Agriculture and livestock production.",
+    "related_objects": ["person", "cow"],
+    "organization": "Maintain clean and safe livestock areas."
+  },
+  {
+    "object": "cow",
+    "category": "Animals",
+    "description": "A domesticated farm animal commonly raised for dairy and meat.",
+    "uses": "Agriculture and food production.",
+    "related_objects": ["person", "sheep"],
+    "organization": "Keep in suitable livestock areas."
+  },
+  {
+    "object": "elephant",
+    "category": "Animals",
+    "description": "A large terrestrial mammal with a trunk and large ears.",
+    "uses": "Wildlife and ecosystem role.",
+    "related_objects": ["person"],
+    "organization": "Maintain safe distance and appropriate wildlife environments."
+  },
+  {
+    "object": "bear",
+    "category": "Animals",
+    "description": "A large wild mammal belonging to the bear family.",
+    "uses": "Wildlife and ecosystem role.",
+    "related_objects": ["person"],
+    "organization": "Maintain significant distance and avoid interaction with wild bears."
+  },
+  {
+    "object": "zebra",
+    "category": "Animals",
+    "description": "A striped African horse-like mammal.",
+    "uses": "Wildlife and ecosystem role.",
+    "related_objects": ["horse", "person"],
+    "organization": "Keep in suitable wildlife or managed animal environments."
+  },
+  {
+    "object": "giraffe",
+    "category": "Animals",
+    "description": "A tall African mammal recognized by its long neck.",
+    "uses": "Wildlife and ecosystem role.",
+    "related_objects": ["person", "zebra"],
+    "organization": "Maintain safe distance in wildlife environments."
+  },
+  {
+    "object": "backpack",
+    "category": "Personal Items",
+    "description": "A portable bag designed to be carried on the back.",
+    "uses": "Carrying books, laptops, clothes and personal items.",
+    "related_objects": ["book", "laptop", "cell phone"],
+    "organization": "Store near an entry point or dedicated bag area."
+  },
+  {
+    "object": "umbrella",
+    "category": "Personal Items",
+    "description": "A portable device used to protect against rain or sunlight.",
+    "uses": "Weather protection.",
+    "related_objects": ["person", "handbag"],
+    "organization": "Store vertically near an entrance so it can dry easily."
+  },
+  {
+    "object": "handbag",
+    "category": "Personal Items",
+    "description": "A small personal bag used for carrying everyday belongings.",
+    "uses": "Carrying phones, wallets, keys and personal items.",
+    "related_objects": ["cell phone", "person"],
+    "organization": "Keep in a designated personal-storage area."
+  },
+  {
+    "object": "tie",
+    "category": "Clothing",
+    "description": "A narrow piece of clothing commonly worn around the neck.",
+    "uses": "Formal and professional clothing.",
+    "related_objects": ["person", "suitcase"],
+    "organization": "Hang vertically or store in a dedicated clothing organizer."
+  },
+  {
+    "object": "suitcase",
+    "category": "Travel",
+    "description": "A portable case used to carry belongings while traveling.",
+    "uses": "Travel and luggage storage.",
+    "related_objects": ["person", "backpack"],
+    "organization": "Store in a luggage area when not in use."
+  },
+  {
+    "object": "frisbee",
+    "category": "Sports",
+    "description": "A lightweight flying disc used for recreational games.",
+    "uses": "Outdoor sports and recreation.",
+    "related_objects": ["person", "dog"],
+    "organization": "Store with other sports equipment."
+  },
+  {
+    "object": "skis",
+    "category": "Sports",
+    "description": "Long narrow boards used for skiing on snow.",
+    "uses": "Winter sports and recreation.",
+    "related_objects": ["person", "snowboard"],
+    "organization": "Store vertically in a dry sports-equipment area."
+  },
+  {
+    "object": "snowboard",
+    "category": "Sports",
+    "description": "A board designed for riding on snow.",
+    "uses": "Winter sports and recreation.",
+    "related_objects": ["person", "skis"],
+    "organization": "Store upright in a dry equipment area."
+  },
+  {
+    "object": "sports ball",
+    "category": "Sports",
+    "description": "A ball used for sports and recreational activities.",
+    "uses": "Games, exercise and recreation.",
+    "related_objects": ["person", "baseball bat", "baseball glove"],
+    "organization": "Keep in a basket or dedicated sports-storage area."
+  },
+  {
+    "object": "kite",
+    "category": "Sports and Recreation",
+    "description": "A lightweight object flown in the air using wind.",
+    "uses": "Outdoor recreation.",
+    "related_objects": ["person", "sports ball"],
+    "organization": "Store folded in a dry storage area."
+  },
+  {
+    "object": "baseball bat",
+    "category": "Sports",
+    "description": "A bat used to hit a baseball.",
+    "uses": "Baseball and sports training.",
+    "related_objects": ["sports ball", "baseball glove"],
+    "organization": "Store vertically in a secure sports-equipment rack."
+  },
+  {
+    "object": "baseball glove",
+    "category": "Sports",
+    "description": "A padded glove used to catch a baseball.",
+    "uses": "Baseball and catching practice.",
+    "related_objects": ["baseball bat", "sports ball"],
+    "organization": "Store with other sports equipment."
+  },
+  {
+    "object": "skateboard",
+    "category": "Sports",
+    "description": "A board mounted on wheels used for riding and recreation.",
+    "uses": "Transportation, sport and recreation.",
+    "related_objects": ["person", "sports ball"],
+    "organization": "Store vertically to save floor space."
+  },
+  {
+    "object": "surfboard",
+    "category": "Sports",
+    "description": "A board designed for riding waves.",
+    "uses": "Surfing and water recreation.",
+    "related_objects": ["person", "boat"],
+    "organization": "Store horizontally or vertically in a secure rack."
+  },
+  {
+    "object": "tennis racket",
+    "category": "Sports",
+    "description": "A racket used to hit a tennis ball.",
+    "uses": "Tennis and sports training.",
+    "related_objects": ["sports ball", "person"],
+    "organization": "Store in a sports-equipment rack."
+  },
+  {
+    "object": "bottle",
+    "category": "Containers",
+    "description": "A container commonly used for storing liquids.",
+    "uses": "Drinking, storing water and carrying beverages.",
+    "related_objects": ["cup", "person"],
+    "organization": "Keep upright to prevent spills and group with other drink containers."
+  },
+  {
+    "object": "wine glass",
+    "category": "Drinkware",
+    "description": "A stemmed glass designed for serving beverages.",
+    "uses": "Serving drinks.",
+    "related_objects": ["bottle", "cup"],
+    "organization": "Store upright in a protected cabinet."
+  },
+  {
+    "object": "cup",
+    "category": "Drinkware",
+    "description": "A small container used for drinking beverages.",
+    "uses": "Drinking water, tea, coffee and other beverages.",
+    "related_objects": ["bottle", "spoon"],
+    "organization": "Group with other drinkware in an accessible cabinet."
+  },
+  {
+    "object": "fork",
+    "category": "Kitchen Utensils",
+    "description": "A utensil with prongs used for eating or handling food.",
+    "uses": "Eating and food preparation.",
+    "related_objects": ["knife", "spoon", "bowl"],
+    "organization": "Store with other cutlery in a dedicated drawer."
+  },
+  {
+    "object": "knife",
+    "category": "Kitchen Utensils",
+    "description": "A sharp utensil used for cutting and food preparation.",
+    "uses": "Cutting and preparing food.",
+    "related_objects": ["fork", "spoon", "bowl"],
+    "organization": "Store securely in a knife block or protected drawer."
+  },
+  {
+    "object": "spoon",
+    "category": "Kitchen Utensils",
+    "description": "A utensil with a rounded bowl used for eating and serving.",
+    "uses": "Eating, stirring and serving.",
+    "related_objects": ["fork", "cup", "bowl"],
+    "organization": "Store with other cutlery."
+  },
+  {
+    "object": "bowl",
+    "category": "Kitchenware",
+    "description": "A rounded container used for holding food or liquids.",
+    "uses": "Serving food, soups and cereals.",
+    "related_objects": ["spoon", "fork", "cup"],
+    "organization": "Stack with similar bowls to save cabinet space."
+  },
+  {
+    "object": "banana",
+    "category": "Food",
+    "description": "A soft elongated fruit with a yellow peel when ripe.",
+    "uses": "Food and nutrition.",
+    "related_objects": ["apple", "orange"],
+    "organization": "Keep in a fruit basket away from fragile items."
+  },
+  {
+    "object": "apple",
+    "category": "Food",
+    "description": "A round edible fruit available in several varieties.",
+    "uses": "Food and nutrition.",
+    "related_objects": ["banana", "orange"],
+    "organization": "Keep with other fruits in a clean storage area."
+  },
+  {
+    "object": "sandwich",
+    "category": "Food",
+    "description": "Food typically made using bread and one or more fillings.",
+    "uses": "Quick meals and snacks.",
+    "related_objects": ["cup", "bottle"],
+    "organization": "Keep covered and refrigerated when required."
+  },
+  {
+    "object": "orange",
+    "category": "Food",
+    "description": "A citrus fruit with a round shape and orange-colored peel.",
+    "uses": "Food, juice and nutrition.",
+    "related_objects": ["apple", "banana"],
+    "organization": "Store with other fruits in a clean basket."
+  },
+  {
+    "object": "broccoli",
+    "category": "Food",
+    "description": "A green vegetable consisting of edible florets and stems.",
+    "uses": "Cooking and nutrition.",
+    "related_objects": ["carrot", "bowl"],
+    "organization": "Store in a clean refrigerated vegetable section."
+  },
+  {
+    "object": "carrot",
+    "category": "Food",
+    "description": "An edible root vegetable commonly orange in color.",
+    "uses": "Cooking, salads and nutrition.",
+    "related_objects": ["broccoli", "bowl"],
+    "organization": "Store with other vegetables in a suitable container."
+  },
+  {
+    "object": "hot dog",
+    "category": "Food",
+    "description": "A prepared food consisting of a sausage served in a bun.",
+    "uses": "Meals and snacks.",
+    "related_objects": ["bowl", "cup"],
+    "organization": "Keep covered and store appropriately when not being served."
+  },
+  {
+    "object": "pizza",
+    "category": "Food",
+    "description": "A baked dish consisting of a dough base with toppings.",
+    "uses": "Meals and social dining.",
+    "related_objects": ["plate", "cup"],
+    "organization": "Keep covered and handle on a suitable serving surface."
+  },
+  {
+    "object": "donut",
+    "category": "Food",
+    "description": "A sweet fried or baked pastry, commonly ring-shaped.",
+    "uses": "Snack and dessert.",
+    "related_objects": ["cup", "cake"],
+    "organization": "Keep covered in a clean food-storage area."
+  },
+  {
+    "object": "cake",
+    "category": "Food",
+    "description": "A baked sweet food commonly served as a dessert.",
+    "uses": "Desserts and celebrations.",
+    "related_objects": ["cup", "donut"],
+    "organization": "Keep protected from heat and contamination."
+  },
+  {
+    "object": "chair",
+    "category": "Furniture",
+    "description": "A piece of furniture designed for one person to sit on.",
+    "uses": "Seating in homes, offices, classrooms and public spaces.",
+    "related_objects": ["dining table", "laptop", "backpack"],
+    "organization": "Keep chairs aligned and maintain clear walking paths."
+  },
+  {
+    "object": "couch",
+    "category": "Furniture",
+    "description": "A padded piece of furniture designed for multiple people to sit on.",
+    "uses": "Relaxation, seating and social spaces.",
+    "related_objects": ["person", "remote", "tv"],
+    "organization": "Keep the area around the couch clear and organized."
+  },
+  {
+    "object": "potted plant",
+    "category": "Plants",
+    "description": "A plant growing inside a container or pot.",
+    "uses": "Decoration, indoor greenery and environmental improvement.",
+    "related_objects": ["vase", "chair"],
+    "organization": "Place where it receives suitable light and does not block pathways."
+  },
+  {
+    "object": "bed",
+    "category": "Furniture",
+    "description": "A piece of furniture designed for sleeping or resting.",
+    "uses": "Sleep and relaxation.",
+    "related_objects": ["person", "cell phone"],
+    "organization": "Keep the surrounding floor area clear and maintain easy access."
+  },
+  {
+    "object": "dining table",
+    "category": "Furniture",
+    "description": "A table designed for eating and dining activities.",
+    "uses": "Meals, gatherings and food preparation.",
+    "related_objects": ["chair", "bowl", "cup"],
+    "organization": "Keep the tabletop uncluttered and arrange chairs evenly."
+  },
+  {
+    "object": "toilet",
+    "category": "Bathroom",
+    "description": "A sanitary fixture used for human waste disposal.",
+    "uses": "Bathroom sanitation.",
+    "related_objects": ["person", "sink"],
+    "organization": "Maintain hygiene and keep surrounding space accessible."
+  },
+  {
+    "object": "tv",
+    "category": "Electronics",
+    "description": "An electronic display used for watching video and media.",
+    "uses": "Entertainment, news and multimedia.",
+    "related_objects": ["remote", "couch"],
+    "organization": "Position securely with clear viewing space and organized cables."
+  },
+  {
+    "object": "laptop",
+    "category": "Electronics",
+    "description": "A portable computer with an integrated display and keyboard.",
+    "uses": "Study, programming, work, communication and entertainment.",
+    "related_objects": ["mouse", "keyboard", "cell phone", "backpack"],
+    "organization": "Keep on a stable surface with sufficient ventilation and organized cables."
+  },
+  {
+    "object": "mouse",
+    "category": "Computer Accessories",
+    "description": "A pointing device used to control a computer interface.",
+    "uses": "Navigation, design, gaming and general computer interaction.",
+    "related_objects": ["laptop", "keyboard"],
+    "organization": "Keep beside the computer and manage its cable neatly."
+  },
+  {
+    "object": "remote",
+    "category": "Electronics",
+    "description": "A handheld control device used to operate electronic equipment.",
+    "uses": "Controlling televisions and other devices.",
+    "related_objects": ["tv", "couch"],
+    "organization": "Keep in a dedicated accessible location near the controlled device."
+  },
+  {
+    "object": "keyboard",
+    "category": "Computer Accessories",
+    "description": "An input device containing keys for entering text and commands.",
+    "uses": "Typing, programming, gaming and computer interaction.",
+    "related_objects": ["mouse", "laptop"],
+    "organization": "Place directly in front of the computer and keep the workspace clear."
+  },
+  {
+    "object": "cell phone",
+    "category": "Electronics",
+    "description": "A portable electronic communication and computing device.",
+    "uses": "Communication, internet access, photography and applications.",
+    "related_objects": ["laptop", "backpack", "person"],
+    "organization": "Keep in a secure, easily accessible location and charge safely."
+  },
+  {
+    "object": "microwave",
+    "category": "Kitchen Appliances",
+    "description": "An electrical appliance that heats food using microwave energy.",
+    "uses": "Heating and cooking food.",
+    "related_objects": ["bowl", "cup"],
+    "organization": "Keep on a stable ventilated surface with clearance around the appliance."
+  },
+  {
+    "object": "oven",
+    "category": "Kitchen Appliances",
+    "description": "An appliance used for baking, roasting and heating food.",
+    "uses": "Cooking and baking.",
+    "related_objects": ["pizza", "cake", "bowl"],
+    "organization": "Keep surrounding area clear and store heat-sensitive items away."
+  },
+  {
+    "object": "toaster",
+    "category": "Kitchen Appliances",
+    "description": "A small appliance designed to toast bread.",
+    "uses": "Preparing toasted bread and snacks.",
+    "related_objects": ["bread", "cup"],
+    "organization": "Keep on a stable heat-resistant surface with clearance around it."
+  },
+  {
+    "object": "sink",
+    "category": "Kitchen and Bathroom",
+    "description": "A basin used for washing hands, dishes or other items.",
+    "uses": "Cleaning and washing.",
+    "related_objects": ["cup", "bowl", "fork"],
+    "organization": "Keep the basin clear and cleaning supplies organized nearby."
+  },
+  {
+    "object": "refrigerator",
+    "category": "Kitchen Appliances",
+    "description": "An appliance that keeps food and beverages cold.",
+    "uses": "Food preservation and storage.",
+    "related_objects": ["bottle", "apple", "orange", "broccoli"],
+    "organization": "Group similar foods together and avoid blocking air vents."
+  },
+  {
+    "object": "book",
+    "category": "Study and Knowledge",
+    "description": "A bound collection of written or printed pages containing information or stories.",
+    "uses": "Education, reference, research and entertainment.",
+    "related_objects": ["backpack", "laptop", "cell phone"],
+    "organization": "Arrange vertically by subject, size or frequency of use."
+  },
+  {
+    "object": "clock",
+    "category": "Timekeeping",
+    "description": "A device used to display or measure time.",
+    "uses": "Timekeeping and scheduling.",
+    "related_objects": ["person", "cell phone"],
+    "organization": "Place where it is clearly visible without obstructing other objects."
+  },
+  {
+    "object": "vase",
+    "category": "Decor",
+    "description": "A container commonly used to hold flowers or decorative plants.",
+    "uses": "Decoration and flower display.",
+    "related_objects": ["potted plant", "person"],
+    "organization": "Place securely on a stable surface away from edges."
+  },
+  {
+    "object": "scissors",
+    "category": "Tools",
+    "description": "A cutting tool consisting of two blades joined together.",
+    "uses": "Cutting paper, fabric and other materials.",
+    "related_objects": ["book", "backpack"],
+    "organization": "Store in a secure drawer or designated stationery area."
+  },
+  {
+    "object": "teddy bear",
+    "category": "Toys",
+    "description": "A soft stuffed toy commonly shaped like a bear.",
+    "uses": "Play, comfort and decoration.",
+    "related_objects": ["bed", "couch"],
+    "organization": "Keep with other toys or decorative items in a dedicated area."
+  },
+  {
+    "object": "hair drier",
+    "category": "Personal Care",
+    "description": "An electrical device that blows warm air to dry hair.",
+    "uses": "Hair drying and styling.",
+    "related_objects": ["person", "sink"],
+    "organization": "Store unplugged in a dry location with its cable organized."
+  },
+  {
+    "object": "toothbrush",
+    "category": "Personal Care",
+    "description": "A small brush designed for cleaning teeth.",
+    "uses": "Oral hygiene.",
+    "related_objects": ["sink", "person"],
+    "organization": "Store upright in a clean, dry and hygienic holder."
+  }
+]
